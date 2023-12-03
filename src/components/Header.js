@@ -9,10 +9,7 @@ const Header = () => {
           <img className='sm:flex max-w-[50px] max-h-[50px] rounded-full border-2 border-purple-900' src={HeroImg} alt="hero"></img></a>
         </div>
         <div className='grid grid-cols-2 text-lg text-center sm:flex sm:flex-row sm:text-2xl sm:justify-end'>
-            <div className='m-2  p-2 border-2 border-purple-800 bg-purple-200 rounded-xl bg-opacity-60 cursor-pointer' >
-            <a href='#About'>About</a></div>
-            <div className='m-2 p-2 border-2 border-purple-800 bg-purple-200 rounded-xl bg-opacity-60 cursor-pointer' >
-            <a href='#skill'>Skills</a></div>
+
             <div className='m-2 p-2 border-2 border-purple-800 bg-purple-200 rounded-xl bg-opacity-60 cursor-pointer' >
             <a href='#Projects'>Projects</a></div>
             <div className='m-2 p-2 border-2 border-purple-800 bg-purple-200 rounded-xl bg-opacity-60 cursor-pointer' >

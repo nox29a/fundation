@@ -12,8 +12,6 @@ const App = () => {
   return <div className='overflow-hidden'>
     <Header />
     <Hero />
-    <About />
-    <Skills />
     <Portfolio />
     <Certification />
     <Contact />

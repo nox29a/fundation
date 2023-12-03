@@ -4,6 +4,8 @@ import Vercel from '../img/25331.png';
 import PaintingShop from '../img/paintingshop.PNG';
 import BorniakShop from '../img/borniakshop.PNG';
 import EditorWebsite from '../img/editorwebsite.PNG';
+import Intrex from '../img/intrex.png';
+import ForniRossi from '../img/forni.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();
@@ -13,7 +15,7 @@ const Portfolio = () => {
   <div className='container mx-auto md:mx-0'>
     <h1 data-aos="flip-down" className='text-[70px] sm:text-[90px] text-center p-8 gap-4'>Portfolio</h1>
     <div className='text-lg grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 p-8 gap-40 justify-center'>
-        {/* new 1 card CARD */}
+        {/* borniak */}
         <div data-aos="flip-left" className='group w-72 sm:w-96 h-[500px] [perspective:1000px]'>
           <div className='bg-hero h-full border-2 border-purple-700 rounded-lg p-8 flex flex-col items-center transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
             <div className='inset-0'>
@@ -43,17 +45,78 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-          {/* new 2 CARD */}
+
+    {/* intrex */}
+    <div data-aos="flip-left" className='group w-72 sm:w-96 h-[500px] [perspective:1000px]'>
+          <div className='bg-hero h-full border-2 border-purple-700 rounded-lg p-8 flex flex-col items-center transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
+            <div className='inset-0'>
+    <div className='absolute text-purple-800 text-[12px] font-extrabold uppercase top-4 right-4 px-2 rounded-full z-10 border-2 border-purple-800'>new</div>
+            <h1 className='text-3xl font-bold text-center mb-8'>Copy of company website</h1>
+              <img className='h-[200px] w-full object-cover' src={Intrex} alt=""></img>
+            <div className='pt-10 text-center'>
+            - React <br />
+            - Tailwind CSS <br />
+          </div>
+            
+            
+            </div>
+            
+              <div className='absolute inset-0 h-full-w-full rounded-xl bg-white/90 px-12 text-center text-stale-200 [transform:rotateY(180deg)] [backface-visibility:hidden]'> 
+                <div className='flex min-h-full flex-col items-center justify-center'>
+                  <h1 className='text-3xl font-bold text-black'>Intrex</h1>
+                <div>
+                  <div className='pt-10 text-black'>
+                  I trying to make copy of main view of this company website<br /></div>
+                  <div className='flex flex-row justify-between mt-10 gap-10'>
+                  <a href="https://github.com/nox29a/intrex"><img className='max-w-[40px] max-h-[40px] cursor-pointer' src={Github} alt="github"></img></a>
+                    <a href="https://intrex.vercel.app"><img className='max-w-[40px] max-h-[40px] cursor-pointer' src={Vercel} alt="vercel"></img></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    {/* forni */}
+    <div data-aos="flip-left" className='group w-72 sm:w-96 h-[500px] [perspective:1000px]'>
+          <div className='bg-hero h-full border-2 border-purple-700 rounded-lg p-8 flex flex-col items-center transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
+            <div className='inset-0'>
+    <div className='absolute text-purple-800 text-[12px] font-extrabold uppercase top-4 right-4 px-2 rounded-full z-10 border-2 border-purple-800'>new</div>
+            <h1 className='text-3xl font-bold text-center mb-8'>Copy of company website</h1>
+              <img className='h-[200px] w-full object-cover' src={ForniRossi} alt=""></img>
+            <div className='pt-10 text-center'>
+            - React <br />
+            - Tailwind CSS <br />
+          </div>
+            
+            
+            </div>
+            
+              <div className='absolute inset-0 h-full-w-full rounded-xl bg-white/90 px-12 text-center text-stale-200 [transform:rotateY(180deg)] [backface-visibility:hidden]'> 
+                <div className='flex min-h-full flex-col items-center justify-center'>
+                  <h1 className='text-3xl font-bold text-black'>Forni Rossi</h1>
+                <div>
+                  <div className='pt-10 text-black'>
+                  I trying to make copy of main view of this company website<br /></div>
+                  <div className='flex flex-row justify-between mt-10 gap-10'>
+                  <a href="https://github.com/nox29a/forni-rossi"><img className='max-w-[40px] max-h-[40px] cursor-pointer' src={Github} alt="github"></img></a>
+                    <a href="https://fornirossi.vercel.app"><img className='max-w-[40px] max-h-[40px] cursor-pointer' src={Vercel} alt="vercel"></img></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          {/* editor */}
           <div data-aos="flip-left" className='group w-72 sm:w-96 h-[500px] [perspective:1000px]'>
           <div className='bg-hero h-full border-2 border-purple-700 rounded-lg p-8 flex flex-col items-center transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
             <div className='inset-0'>
-    <div className='absolute text-purple-800 text-[12px] font-extrabold uppercase top-4 right-4 px-2 rounded-full z-10 border-2 bg-gray-400 border-purple-800'>new</div>
+
             <h1 className='text-3xl font-bold text-center mb-8'>Video editor <br /> website</h1>
               <img className='h-[200px] w-full object-cover' src={EditorWebsite} alt=""></img>
             <div className='pt-10 text-center'>
-            It's a copy of this website, <br/>
-            added translation for polish people 
-            and new look.</div> 
+            My editor website</div> 
             
             
             </div>
@@ -63,7 +126,7 @@ const Portfolio = () => {
                   <h1 className='text-3xl font-bold text-black'>Personal video website</h1>
                 <div>
                   <div className='pt-10 text-black'>
-                  I also working with videos and graphics.<br /></div>
+                  I also working with videos and graphics. Making edits in Premiere Pro<br /></div>
                   <div className='flex flex-row justify-between mt-10 gap-10'>
                   <a href="https://github.com/nox29a/editor"><img className='max-w-[40px] max-h-[40px] cursor-pointer' src={Github} alt="github"></img></a>
                     <a href="https://editor-nox.vercel.app/"><img className='max-w-[40px] max-h-[40px] cursor-pointer' src={Vercel} alt="vercel"></img></a>
@@ -73,7 +136,7 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-    {/* FIRST CARD */}
+    {/* ecommerce */}
       <div  data-aos="flip-right" className='group w-72 sm:w-96 h-[500px] [perspective:1000px]'>
           <div className='bg-hero h-full border-2 border-purple-700 rounded-lg p-8 flex flex-col items-center transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
             <div className='inset-0'>
@@ -99,7 +162,7 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-    {/* SECOND CARD */}
+    {/* countdown */}
       <div data-aos="flip-right" className='group w-72 sm:w-96 h-[500px] [perspective:1000px]'>
           <div className='bg-hero h-full border-2 border-purple-700 rounded-lg p-8 flex flex-col items-center transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
             <div className='inset-0'>
@@ -124,7 +187,7 @@ const Portfolio = () => {
             </div>
           </div>
         </div>  
-    {/* THIRD CARD */}
+    {/* painting shop */}
       <div data-aos="flip-left" className='group w-72 sm:w-96 h-[500px] [perspective:1000px]'>
           <div className='bg-hero h-full border-2 border-purple-700 rounded-lg p-8 flex flex-col items-center transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
             <div className='inset-0'>
@@ -154,11 +217,11 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-    {/* FOUR CARD */}
+    {/* simple django */}
       <div data-aos="flip-left" className='group w-72 sm:w-96 h-[500px] [perspective:1000px]'>
           <div className='bg-hero h-full border-2 border-purple-700 rounded-lg p-8 flex flex-col items-center transition-all duration-500 transform-custom group-hover:[transform:rotateY(180deg)]'>
             <div className='inset-0'>
-            <h1 className='text-3xl font-bold text-center  mb-8'>My design <br />portfolio site</h1>
+            <h1 className='text-3xl font-bold text-center  mb-8'>My old portfolio website</h1>
               <img className='h-[200px] w-full object-cover' src="http://nox29a.pythonanywhere.com/static/assets/img/djanogsite.PNG" alt=""></img>
               <div className='pt-10 text-center'>
         - Python <br />
@@ -167,7 +230,7 @@ const Portfolio = () => {
             </div>
               <div className='absolute inset-0 h-full-w-full rounded-xl bg-white/90 px-12 text-center text-stale-200 [transform:rotateY(180deg)] backface-custom content-auto'> 
                 <div className='flex min-h-full flex-col items-center justify-center'>
-                  <h1 className='text-3xl font-bold text-black'>My design portfolio site</h1>
+                  <h1 className='text-3xl font-bold text-black'>My portfolio site</h1>
                 <div>
                   <div className='pt-10 text-black'>
                   This is my first made portfolio website, now with my more creative projects about videos, photos and images. <br /></div>
