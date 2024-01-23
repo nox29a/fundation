@@ -2,7 +2,9 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     fontFamily: {
-      primary: 'Poppins',
+      primary: 'Georgia',
+      hero: 'Cambria',
+      secondary: 'Monaco',
     },
     container: {
       padding: {
@@ -23,13 +25,12 @@ module.exports = {
           DEFAULT: '#74AD45',
           hover: '#83FA23',
         },
-        secondary: '#00AD1A',
-        certification: '#B5CBE0',
-        body: '#F8C7B6',
+        secondary: '#FFFEDA',
+
       },
       backgroundImage: {
-        hero: "url('./img/herobg.png')",
-        herohead: "url('./img/herobghead.png')",
+        hero: "url('./img/bg.jpg')",
+   
       },
       keyframes: {
         flip: {

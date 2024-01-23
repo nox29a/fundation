@@ -1,45 +1,33 @@
 import React from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-AOS.init();
-const PDF_RESUME_URL = 'https://nox29a.pythonanywhere.com/static/assets/img/Łukasz-Adamczyk_CV.pdf';
+
+
+import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai';
+
 const Contact = () => {
-  const downloadFileAtURL = (url) => {
-    fetch(url).then(response=>response.blob()).then(blob => {
-      const blobURL = window.URL.createObjectURL(new Blob([blob]));
-      const fileName = url.split('/').pop();
-      const aTag = document.createElement('a');
-      aTag.href = blobURL;
-      aTag.setAttribute('download', fileName);
-      document.body.appendChild(aTag);
-      aTag.click();
-      aTag.remove();
-  })
-}
-  const lookAtFileAtURL = (url) => {
-    const fileName = url.split('/').pop();
-    const aTag = document.createElement('a');
-    aTag.href = url;
-    aTag.setAttribute('download', fileName);
-    document.body.appendChild(aTag);
-    aTag.click();
-    aTag.remove();
-  }
   return (
-    <section className="contact-section">
-    <div className='place-items-center'>
-      <div >
-        <div className='text-[30px] text-center p-8 gap-4 mt-20'>
-          <p className='mb-4'>You can contact me via mail:</p>
-          <p className=' mb-12 text-sm sm:text-2xl lg:96 sm:mx-5 md:mx-32  p-4 bg-purple-400 hover:bg-blue-700 text-white  border-2 border-purple-700 rounded-full'>adamczyk29a@interia.pl</p>
-          <p className='mb-4'>My CV:</p>
-          <button className='bg-green-500 hover:bg-blue-700 text-white py-4 px-8 border border-blue-700 rounded-full mx-2 ' onClick={()=>{downloadFileAtURL(PDF_RESUME_URL)}}>DOWNLOAD</button>
-          <button className='bg-green-500 hover:bg-blue-700 text-white py-4 px-8 border border-blue-700 rounded-full mx-2' onClick={()=>{lookAtFileAtURL(PDF_RESUME_URL)}}>VIEW</button>
+    <div id="Contact" className='pt-32 bg-body text-black'>
+      <div className='grid place-items-center'>
+        <div className='container mx-auto'>
+          <h1 data-aos="" className='text-5xl text-center py-8 text-black'>Kontakt</h1>
+          <div className='flex flex-col sm:flex-row text-center justify-center my-10'>
+            <div className='w-full sm:w-1/2 flex items-center mb-4 sm:mb-0'>
+              <AiOutlineMail className='text-3xl mr-2' />
+              <p className='text-lg'>Możesz się z nami skontaktować pisząc na adres mailowy:</p>
+            </div>
+            <p className='w-full sm:w-1/2 text-lg mb-4 sm:mb-0'>example@example.com</p>
+          </div>
+          <div className='flex flex-col sm:flex-row text-center justify-center my-5'>
+            <div className='w-full sm:w-1/2 flex items-center mb-4 sm:mb-0'>
+              <AiOutlinePhone className='text-3xl mr-2' />
+              <p className='text-lg'>Skontaktuj się z nami telefonicznie pod numerem:</p>
+            </div>
+            <p className='w-full sm:w-1/2 text-lg'>+48 123 456 789</p>
+          </div>
         </div>
       </div>
     </div>
-    </section>
-  )
+  );
 };
 
 export default Contact;
+
